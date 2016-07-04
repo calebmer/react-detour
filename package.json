@@ -1,0 +1,60 @@
+{
+  "name": "react-detour",
+  "version": "1.0.0",
+  "author": "Caleb Meredith <calebmeredith8@gmail.com>",
+  "license": "MIT",
+  "description": "A React router that lets you collocate your routes with your components.",
+  "keywords": [
+    "react",
+    "router",
+    "detour"
+  ],
+  "repository": {
+    "//": "TODO"
+  },
+  "main": "dist/detour.js",
+  "typings": "dist/detour.d.ts",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "tsc",
+    "test": "ava",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "ava": {
+    "files": [
+      "src/**/__tests__/*.js"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "babel": {
+      "plugins": [],
+      "presets": [
+        "es2015",
+        "stage-1",
+        "react"
+      ]
+    }
+  },
+  "dependencies": {
+    "path-to-regexp": "^1.5.3"
+  },
+  "peerDependencies": {
+    "react": "^15.1.0"
+  },
+  "devDependencies": {
+    "@types/es6-shim": "0.0.22-alpha",
+    "@types/react": "^0.14.21-alpha",
+    "ava": "^0.15.2",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-1": "^6.5.0",
+    "enzyme": "^2.3.0",
+    "react": "^15.1.0",
+    "react-addons-test-utils": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "test-dom": "^1.0.0",
+    "ts-node": "^0.9.3",
+    "typescript": "^2.0.0-dev.20160630"
+  }
+}
